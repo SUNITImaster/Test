@@ -172,9 +172,9 @@ if __name__=="__main__":
     data_club_train,data_club_test,data_club_val=datagen.batch_data(data_club)
     datagen.printplots()
     model=Neural_Net()
-    loaded_dict=torch.load("D:/Suniti/GitPythonRepo/NNetUAT/results_level2/modelweights/model_optim_epoch_300.pt",weights_only=False)
-    model.load_state_dict(state_dict=loaded_dict["model_dict"])
-    #model.TrainNetwork(data_club_train,data_club_test,data_club_val)
+    #loaded_dict=torch.load("D:/Suniti/GitPythonRepo/NNetUAT/results_level2/modelweights/model_optim_epoch_300.pt",weights_only=False)
+    #model.load_state_dict(state_dict=loaded_dict["model_dict"])
+    model.TrainNetwork(data_club_train,data_club_test,data_club_val)
     for batch_idx, dataval in enumerate(data_club_val):
                 # get the inputs; data is a list of [inputs, labels]
                 inputs, labels = dataval 
