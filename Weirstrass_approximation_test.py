@@ -46,7 +46,7 @@ if __name__=="__main__":
     print("started the main code of Weirstrass Approximation theorm")
     N=1001 # This is the max value uptil which we iterate
     os.chdir("D:/Suniti/GitPythonRepo/NNetUAT/Polynomial/Weirstrass_approximation_theorem/")
-    hand_graph_data=pd.read_csv("hand_plot_graph_data.csv")
+    hand_graph_data=pd.read_csv("hand_plot_graph_data.csv") #Underlying data of an arbitrary continuous hand plotted graph extracted into csv"
     hand_graph_data.columns=["X_value","Y_value"]
     hand_graph_data["X_value_norm"]=hand_graph_data["X_value"]/11
     l=len(hand_graph_data["X_value"])
